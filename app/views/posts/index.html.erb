@@ -1,0 +1,5 @@
+<h3>Collection of Posts:</h3>
+
+<% @posts.each do |post|%>
+    <div><%= link_to post.title, post_path(post) %></div>
+<%end%>
