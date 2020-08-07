@@ -32,7 +32,7 @@ like in code:
 * **Hard-coded path:** `"/posts/#{@post.id}"`
 
 Here you're saying: "I know exactly the GPS coordinates of my meeting, driver.
-Do exactly as I say."
+Do exactly as I say." 
 
 * **Route helper:** `post_path(@post)`
 

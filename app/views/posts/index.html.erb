@@ -2,7 +2,9 @@
 #   <div><a href='<%= "/posts/#{post.id}" %>'><%= post.title %></a></div>
 # <% end %> 
 
+<ul> 
+  <% @posts.each do |post| %>
+   <li>  <div><%= link_to post.title, post_path(post) %></div> </li>
+  <% end %>
 
-<% @posts.each do |post| %>
-  <div><%= link_to post.title, post_path(post) %></div>
-<% end %>
+</ul>
